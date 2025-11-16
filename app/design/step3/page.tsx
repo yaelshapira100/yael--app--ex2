@@ -19,7 +19,7 @@ export default function Step3Page() {
 
           <div className={styles.separator} />
 
-          <h3 className={styles.sectionTitle}><strong>פיצ'רים עיקריים:</strong></h3>
+          <h3 className={styles.sectionTitle}><strong>פיצרים עיקריים:</strong></h3>
           <div className={styles.featuresGrid}>
             <div className={styles.featureItem}>
               <div className={styles.featureTitle}><strong>פרופיל משתמש</strong></div>
@@ -32,7 +32,7 @@ export default function Step3Page() {
             </div>
 
             <div className={styles.featureItem}>
-              <div className={styles.featureTitle}><strong>צ'אט</strong></div>
+              <div className={styles.featureTitle}><strong>צאט</strong></div>
               <div className={styles.featureText}>תקשורת מקצועית לאחר מאצ'.</div>
             </div>
 
