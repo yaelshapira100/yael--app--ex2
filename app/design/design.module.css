@@ -1,0 +1,145 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; 
+}
+
+.frame {
+    display: flex;
+    width: 440px;
+    padding: 74px 42px 60px 42px;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+.title {
+  font-family: TheBasics;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+
+.titleMain {
+  color: #000;
+    text-align: right;
+    font-family: TheBasics;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titleSub{
+    color: #837872;
+    text-align: right;
+    font-family: TheBasics;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.subtitle {
+  color: #000;
+  text-align: right;
+  direction: rtl;
+  font-family: TheBasics;
+  font-size: clamp(25px, 3.2vw, 27px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 0 8px 0;
+}
+.subtitleHiglight {
+  display: inline;
+  color: #000;
+  font-family: TheBasics;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.subtitleNormal {
+  display: inline;
+  color: #6b7280; 
+  font-family: TheBasics;
+  font-size: inherit;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progressBar {
+  display: flex;
+  flex-direction: row-reverse; 
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.line,
+.lineActive {
+  display: inline-block;
+  width: 48px;
+  height: 6px;
+  border-radius: 6px;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+.line:hover { background: #d1d5db; }
+.lineActive { background: #F00; }
+
+
+
+.card {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 12px;
+}
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: right; 
+  margin-bottom: 6px;
+}
+
+.cardText {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.4;
+  text-align: right; 
+}
+
+
+.pageEnter {
+  animation: pageSlideIn 0.45s ease-out forwards;
+}
+
+@keyframes pageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(24px);  
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,123 @@
+/* Step2 styles — typography and layout per spec */
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* רווח בין הסעיפים */
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+
+/* כותרת כל חלק (הדגשה) */
+.sectionTitle {
+  color: #000;
+  text-align: right;
+  direction: rtl;
+  font-family: TheBasics;
+  font-size: clamp(20px, 3.2vw, 26px);
+  font-weight: 500; /* הדגשה לפי המפרט */
+  margin: 0;
+}
+
+/* ...existing code... */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* רק כאשר לרשימה יש class .bulleted - ה־SVG יופיע כבולט */
+.bulleted .listItem {
+  position: relative;
+  padding-right: 28px;
+}
+
+.bulleted .listItem::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('/list_logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* שאר הסגנון של פריטי רשימה (לשתי הרשימות) */
+.listItem {
+  color: #000;
+  text-align: right;
+  direction: rtl;
+  font-family: TheBasics;
+  font-size: clamp(18px, 2.6vw, 20px);
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* פיצ'רים - גריד שתי עמודות, ללא בולטים */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 24px;
+  margin-top: 6px;
+}
+
+/* כל פריט פיצ'ר - כותרת + טקסט רץ */
+.featureItem {
+  text-align: right;
+  direction: rtl;
+}
+
+.featureTitle {
+  color: #000;
+  font-family: TheBasics;
+  font-size: clamp(19px, 2.8vw, 22px);
+  font-weight: 500; /* הדגשה */
+  margin-bottom: 6px;
+}
+
+.featureText {
+  color: #000;
+  font-family: TheBasics;
+  font-size: clamp(18px, 2.6vw, 20px);
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* שורה מפרידה עדינה */
+.separator {
+  height: 1px;
+  background: transparent;
+  border-top: 1px dashed #e5e7eb;
+  margin: 6px 0;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 24px;
+  margin-top: 6px;
+}
+
+/* פריט שתופס את כל השורה */
+.fullWidth {
+  grid-column: 1 / -1;
+  /* אם רוצים שהכותרת במרכז: use text-align:center; כאן שמרתי על ימין */
+}
+
+/* אפשר להוסיף מרווח עליון כדי להפריד את השורה המלאה מהשורות מעליה */
+.fullWidth { margin-top: 6px; }
+
+/* מובייל: גריד לעמודה אחת */
+@media (max-width: 520px) {
+  .featuresGrid { grid-template-columns: 1fr; }
+}

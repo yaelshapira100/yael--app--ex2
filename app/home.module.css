@@ -1,0 +1,105 @@
+/* עיצוב מסך מרכזי */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #fdfbff 0%, #e8f0ff 40%, #f5f7fb 100%);
+  text-align: center;
+  padding: 24px;
+}
+
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1f2933;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+.buttonsWrapper {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 210px;
+  height: 190px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease,
+    border-color 0.22s ease;
+  cursor: pointer;
+}
+
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.18);
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(129, 140, 248, 0.7);
+}
+
+
+.card:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 4px;
+}
+
+/* אייקון */
+.icon {
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+/* לוגו */
+.logoWrapper {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    width: 180px;
+    height: 170px;
+    padding: 18px;
+  }
+
+  .buttonsWrapper {
+    gap: 20px;
+  }
+}
