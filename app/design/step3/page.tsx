@@ -33,7 +33,7 @@ export default function Step3Page() {
 
             <div className={styles.featureItem}>
               <div className={styles.featureTitle}><strong>צאט</strong></div>
-              <div className={styles.featureText}>תקשורת מקצועית לאחר מאצ'.</div>
+              <div className={styles.featureText}>תקשורת מקצועית לאחר מאצ.</div>
             </div>
 
             <div className={styles.featureItem}>
