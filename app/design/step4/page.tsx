@@ -6,7 +6,7 @@ import ProgressBar from "../progressBar";
 
 
 const items = [
-  { src: "/list_logo.svg", label: "מאצ' התחלתי" },
+  { src: "/list_logo.svg", label: "מאצ התחלתי" },
   { src: "/swipe_logo.svg", label: "ביצוע סוויפ" },
   { src: "/feed_logo.svg", label: "פיד מותאם אישית" },
   { src: "/profile_logo.svg", label: "יצירת פרופיל" }
