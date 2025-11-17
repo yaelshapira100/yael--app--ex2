@@ -27,7 +27,7 @@ type ArtData = {
   items: MetObject[];
 };
 
-// ---- הקומפוננטה המאוחדת ----
+
 function ArtCard({ item }: { item: MetObject }) {
   const {
     title,
@@ -93,8 +93,7 @@ function ArtCard({ item }: { item: MetObject }) {
   );
 }
 
-// --------- פונקציית הדאטה ---------
-export async function getArtData(
+async function getArtData(
   departmentId: string,
   count: number
 ): Promise<ArtData> {
