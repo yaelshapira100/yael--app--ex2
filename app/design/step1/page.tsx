@@ -1,4 +1,3 @@
-// ...existing code...
 'use client';
 import Image from "next/image";
 import common from "../design.module.css";
@@ -11,7 +10,7 @@ export default function Step1Page() {
       <section className={common.frame}>
         <Image src="/logo.svg" alt="logo" width={120} height={120} className={common.logo} />
 
-        {/* content area שמאפשר גלילה פנימית כאשר יש יותר תוכן */}
+        {}
         <div className={styles.content}>
           <p className={styles.subtitle}>
             <span className={styles.subtitleHiglight}>פלטפורמה דיגיטלית המחברת בין אמנים ואוצרים </span>
@@ -24,4 +23,3 @@ export default function Step1Page() {
     </main>
   );
 }
-// ...existing code...
